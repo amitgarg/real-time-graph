@@ -110,7 +110,7 @@ myapp.controller("MaleFemalRatioCtrl", function ($scope) {
     theme: "theme2",
     legend: {
       fontFamily: "calibri",
-      fontSize: 14,
+      fontSize: 24,
       horizontalAlign: "left",
       verticalAlign: "center",
       itemTextFormatter: function (e) {
@@ -172,7 +172,7 @@ myapp.controller("SalaryWiseSigninCtrl", function ($scope) {
     colorSet: "customColorSet",
     legend: {
       fontFamily: "calibri",
-      fontSize: 14,
+      fontSize: 24,
       horizontalAlign: "left",
       verticalAlign: "center",
       itemTextFormatter: function (e) {
@@ -231,7 +231,7 @@ myapp.controller("AgeWiseSigninCtrl", function ($scope) {
     colorSet: "customColorSet",
     legend: {
       fontFamily: "calibri",
-      fontSize: 14,
+      fontSize: 24,
       horizontalAlign: "left",
       verticalAlign: "center",
       itemTextFormatter: function (e) {
