@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Realtime Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="./app/assets/styles/app.css">  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="http://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>  
+  </head>
+  <body ng-app="myApp">
+    <nav class="navbar navbar-fixed-top" id="header">
+      <span class="hidden-xs-down m-r-3">Tekion Real Time Web Analytics </span>
+    </nav>
+    <div ng-controller="MainCtrl" class="container"> 
+      <div class="row">
+        <div class="col left" ng-controller="UserSigninCtrl">
+          <h4 class="card-title">Live Users Signing in Age data (Male(Blue) and Female(pink))</h4>
+          <div id="live-users-age-data-per-second"></div>
+        </div>
+        <div class="col right" ng-controller="MaleFemalRatioCtrl">
+          <h4 class="card-title">Male Femal Signin Ratio</h4>
+          <div id="male-femal-ratio-donut-chart"></div>
+        </div>        
+      </div>   
+      <div class="row">
+        <div class="col left" ng-controller="SalaryWiseSigninCtrl">
+          <h4 class="card-title">Salary Wise Breakup of Signed in Users</h4>
+          <div id="salary-wise-sign-in-raio-pie-chart"></div>
+        </div>
+        <div class="col right" ng-controller="AgeWiseSigninCtrl">
+          <h4 class="card-title">Age Wise Breakup of Signed in Users</h4>
+          <div id="age-wise-sign-in-raio-pie-chart"></div>
+        </div>       
+      </div>
+    </div>     
+    <script type="text/javascript" src="./app/javascripts/app.js"></script>
+  </body>
+</html>
